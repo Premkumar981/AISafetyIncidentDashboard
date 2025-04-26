@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  select {
+    padding: 8px;
+  }
+  
+  .incident-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .incident {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f1f1f1;
+    transition: background 0.3s;
+  }
+  
+  .incident:hover {
+    background: #e2e6ea;
+  }
+  
+  .incident-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .incident-meta {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .details {
+    margin-top: 10px;
+    font-size: 15px;
+    display: none;
+  }
+  
+  button.view-details {
+    background: #007bff;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  
+  button.view-details:hover {
+    background: #0056b3;
+  }
+  
+  .incident-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .incident-form input,
+  .incident-form textarea,
+  .incident-form select,
+  .incident-form button {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .incident-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .incident-form button:hover {
+    background-color: #218838;
+  }
+  
+  @media (max-width: 600px) {
+    .controls {
+      flex-direction: column;
+    }
+  }
+  

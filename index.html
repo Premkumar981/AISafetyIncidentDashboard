@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Safety Incident Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Safety Incident Dashboard</h1>
+
+    <div class="controls">
+      <select id="filterSeverity">
+        <option value="All">All Severities</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+
+      <select id="sortDate">
+        <option value="newest">Newest First</option>
+        <option value="oldest">Oldest First</option>
+      </select>
+    </div>
+
+    <div id="incidentList" class="incident-list"></div>
+
+    <hr>
+
+    <h2>Report New Incident</h2>
+    <form id="incidentForm" class="incident-form">
+      <input type="text" id="title" placeholder="Title" required>
+      <textarea id="description" placeholder="Description" required></textarea>
+      <select id="severity" required>
+        <option value="">Select Severity</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button type="submit">Submit Incident</button>
+    </form>
+
+    <footer class="footer">
+      <p>Designed by - <strong>Suru Prem Kumar</strong></p>
+      <p>
+        <a href="https://github.com/Premkumar981/AISafetyIncidentDashboard" target="_blank">GitHub Repo</a> | 
+        <a href="https://premkumarsuru.wixsite.com/my-site" target="_blank">My Portfolio</a> | 
+        <a href="https://www.linkedin.com/in/surupremkumar/" target="_blank">LinkedIn</a>
+      </p>
+    </footer>
+
+  </div>
+
+  <script type="module" src="./dist/app.js"></script>
+</body>
+</html>
