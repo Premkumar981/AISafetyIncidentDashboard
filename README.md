@@ -49,16 +49,10 @@ npm install
 ### 3. Start Development Server
 
 ```bash
-npm run dev
+npx serve .
 ```
 This will start a local server at: http://localhost:5173/
 
-### 4. Build for Production
-
-```bash
-npm run build
-```
-Production-ready files will be created inside the dist/ folder.
 
 ## 📖 About the Project
 The AI Safety Incident Dashboard is designed to:
